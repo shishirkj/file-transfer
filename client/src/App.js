@@ -46,6 +46,23 @@ async function handleOffer({from,offer}){
   const answer = await peer.getAnswer(offer);
   console.log("answer:",answer,"remoteSocketId:",from);
   socket.emit("send-ans",{to:from,answer})
+ 
+}
+
+//can also do datachannel.addEventListener
+dc.addEventListener('message', ev => {
+  console.log('working')
+    if (typeof ev.data == 'object') {
+        const a = document.createElement('a');
+        const blob = new Blob([ev.data]);
+        const obj = URL.createObjectURL(blob);
+        a.href = obj;
+        a.download = 'rec.png';
+        a.click()
+    }     
+  });
+  
+useEffect(()=>{
   peer.peer.ondatachannel = e => {
     console.log("dsdsds!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!11")
     const receiveChannel = e.channel;
@@ -54,21 +71,9 @@ async function handleOffer({from,offer}){
     receiveChannel.onclose = e => console.log("closed!!!!!!");
     peer.peer.channel = receiveChannel;
   }
-  
-  dc.addEventListener('message', ev => {
-    console.log('working')
-      if (typeof ev.data == 'object') {
-          const a = document.createElement('a');
-          const blob = new Blob([ev.data]);
-          const obj = URL.createObjectURL(blob);
-          a.href = obj;
-          a.download = 'rec.png';
-          a.click()
-      }     
-    });
-    
- 
-}
+} ,[datachanell])
+
+
 async function handleAnswer(answer){ 
   console.log("answer-recieved:",answer);
   await peer.setLocalDesc(answer);
