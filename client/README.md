@@ -1,4 +1,4 @@
-#to run client execute npm run start
+# to run client execute npm run start
 
 # Getting Started with Create React App
 
