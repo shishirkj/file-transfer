@@ -1,1 +1,1 @@
-## to run server run npm run dev or npm run start
+## to run server execute npm run dev or npm run start
