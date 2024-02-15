@@ -50,17 +50,17 @@ async function handleOffer({from,offer}){
 }
 
 //can also do datachannel.addEventListener
-dc.addEventListener('message', ev => {
-  console.log('working')
-    if (typeof ev.data == 'object') {
-        const a = document.createElement('a');
-        const blob = new Blob([ev.data]);
-        const obj = URL.createObjectURL(blob);
-        a.href = obj;
-        a.download = 'rec.png';
-        a.click()
-    }     
-  });
+// dc.addEventListener('message', ev => {
+//   console.log('working')
+//     if (typeof ev.data == 'object') {
+//         const a = document.createElement('a');
+//         const blob = new Blob([ev.data]);
+//         const obj = URL.createObjectURL(blob);
+//         a.href = obj;
+//         a.download = 'rec.png';
+//         a.click()
+//     }     
+//   });
   
 useEffect(()=>{
   peer.peer.ondatachannel = e => {
