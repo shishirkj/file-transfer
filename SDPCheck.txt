@@ -1,0 +1,21 @@
+{
+    "type": "offer",
+    "sdp": "v=0\r\no=- 5902498895785433064 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=extmap-allow-mixed\r\na=msid-semantic: WMS\r\n"
+}
+
+{
+    "type": "offer",
+    "sdp": "v=0\r\no=- 5902498895785433064 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=extmap-allow-mixed\r\na=msid-semantic: WMS\r\n"
+}
+
+
+{
+    "type": "offer",
+    "sdp": "v=0\r\no=- 5099483713123619614 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE 0\r\na=extmap-allow-mixed\r\na=msid-semantic: WMS\r\nm=application 9 UDP/DTLS/SCTP webrtc-datachannel\r\nc=IN IP4 0.0.0.0\r\na=ice-ufrag:VDjr\r\na=ice-pwd:623TBZfU+qEWEL0wSyjOq27C\r\na=ice-options:trickle\r\na=fingerprint:sha-256 98:32:8D:91:B2:C1:AE:1E:C4:B1:DB:14:D8:FD:F8:FA:0B:CE:C7:82:16:A1:CA:4E:CA:3A:DF:80:A4:84:D9:8F\r\na=setup:actpass\r\na=mid:0\r\na=sctp-port:5000\r\na=max-message-size:262144\r\n"
+}
+
+
+{
+    "type": "offer",
+    "sdp": "v=0\r\no=- 9150017294799422596 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE 0\r\na=extmap-allow-mixed\r\na=msid-semantic: WMS\r\nm=application 9 UDP/DTLS/SCTP webrtc-datachannel\r\nc=IN IP4 0.0.0.0\r\na=ice-ufrag:tObu\r\na=ice-pwd:pocSl2t0/48qUw8waFgbsqoH\r\na=ice-options:trickle\r\na=fingerprint:sha-256 7E:95:6C:B9:B3:28:5D:5B:DE:01:51:E9:5C:C0:80:49:CF:45:28:D5:3A:5E:4C:31:4C:3D:8E:AB:42:E0:D4:02\r\na=setup:actpass\r\na=mid:0\r\na=sctp-port:5000\r\na=max-message-size:262144\r\n"
+}
